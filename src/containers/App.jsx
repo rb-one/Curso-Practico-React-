@@ -19,7 +19,9 @@ const App = () => {
       {initialState.mylist.lenght > 0 && (
         <Categories title='Mi lista'>
           <Carousel>
-            <CarouselItem />
+            {initialState.mylist.map((item) => (
+              // eslint-disable-next-line react/jsx-props-no-spreading
+              <CarouselItem key={item.id} {...item} />))}
           </Carousel>
         </Categories>
       )}
@@ -34,10 +36,9 @@ const App = () => {
 
       <Categories title='Originales de Platzi Video'>
         <Carousel>
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
+          {initialState.originals.map((item) => (
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            <CarouselItem key={item.id} {...item} />))}
         </Carousel>
       </Categories>
 

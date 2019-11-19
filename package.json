@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.6",
     "eslint-plugin-react-hooks": "^1.7.0",
     "md5": "^2.2.1",
     "prop-types": "^15.7.2",

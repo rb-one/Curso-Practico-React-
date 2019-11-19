@@ -57,6 +57,7 @@ const mapStateToProps = (state) => {
   };
 };
 
+//se encarga de todas las acciones que vamos a disparar
 const mapDispatchToProps = {
   logoutRequest,
 };
